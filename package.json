@@ -4,14 +4,13 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist",
-  "type": "module",
   "scripts": {
     "build": "tsc",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:rubanjohn88/test-logging.git"
+    "url": "git@us-south.git.cloud.ibm.com:cammis/common-logging.git"
   },
   "keywords": [],
   "author": "",

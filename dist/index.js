@@ -23,7 +23,7 @@ var getPiiFilter = function (redactPrefix, key) {
     return piiFilter;
 };
 //create logger instance
-exports.logger = function (children) {
+var logger = function (children) {
     //Get the sensitive keys from configuration file to redact
     var service = configuration_master_1.default.serviceName || 'micro service';
     var redactPrefix = configuration_master_1.default.logging.redactPrefix || ['request[*].'];
@@ -46,4 +46,5 @@ exports.logger = function (children) {
     });
     return children == null ? baseLogger.child({ id: "server generated log", service: service }) : baseLogger.child(__assign(__assign({}, children), { service: service }));
 };
+exports.logger = logger;
 //# sourceMappingURL=index.js.map

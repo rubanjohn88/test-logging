@@ -9,6 +9,10 @@
     "build": "tsc",
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rubanjohn88/test-logging.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
